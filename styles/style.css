@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: #23272D;
+}
+body{
+    background-color: #23272d23;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+    background-color: #23272D;
+    font-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.header-logo{
+    width: 200px;
+    height: auto;
+}
+
+.header-logo img{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AA956F;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    position: relative;
+    margin: 0 8px;
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+/* Form */
+.form-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.add-st-form, .add-p-form, .points{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.39);
+    background-color: rgba(255,255,255,0.13);
+    padding: 50px 35px;
+    color: #23272D;
+    margin: 1.5rem auto;
+}
+
+.auth-form, .upload-form{
+    width: 400px !important;
+}
+
+form *{
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+form label{
+    width: 90%;
+    margin-top: 0.5rem;
+}
+
+form input{
+    width: 90%;
+    height: 45px;
+    margin: 6px 0;
+    padding: 0 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+
+form input[type="submit"]{
+    background-color: #23272D;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+form select{
+    width: 90%;
+    height: 45px;
+    margin: 6px 0;
+    padding: 0 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+
+.forget-pwd{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.forget-pwd-btn{
+    color: #2c2c2cb2 !important;
+}
+
+
+.logout-btn{
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 9px 15px;
+    color: white !important;
+    background-color: #23272D;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 2rem auto;
+}
+
+.logout-btn:hover{
+    background-color: #AA956F;
+    transition: all 0.5s ease-in-out;
+}
+
+fieldset{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    padding:16px;
+    flex-direction: column;
+    border: 1px solid #23272d9c;
+}
+
+fieldset legend{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #23272D;
+    font-size: 0.9rem;
+    color: white;
+}
+
+fieldset label{
+    width: 100%;
+    padding: 10px;
+    margin: 3px auto;
+    text-align: center;
+}
+
+fieldset label:nth-child(even){
+    background-color: #c4c4c4c4;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 3rem auto;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:nth-child(odd){background-color: #c4c4c4c4;}
+  
+th{
+    background-color: #23272D;
+    color: white;
+}
